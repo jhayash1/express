@@ -7,7 +7,7 @@ app.use(express.json());
 let todoList = ["Apple"]
 
 app.get('/',(req,res)=>{
-    res.status(200).send(todoList)
+    res.status(200).send(todoList) // get all the tasks in the todo list
 })
 // Fetch API to add a new task to the todo list
 app.post('/todo',(req,res)=>{
